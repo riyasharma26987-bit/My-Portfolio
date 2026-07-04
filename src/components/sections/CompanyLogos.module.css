@@ -1,0 +1,71 @@
+.logoSection {
+  padding: 4rem 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255,255,255,0.4);
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.trustText {
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  letter-spacing: 0.2em;
+  margin-bottom: 2rem;
+}
+
+.marqueeContainer {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+/* Gradient masks for smooth fade in/out on edges */
+.marqueeContainer::before,
+.marqueeContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 2;
+}
+
+.marqueeContainer::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-color), transparent);
+}
+
+.marqueeContainer::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-color), transparent);
+}
+
+.marqueeTrack {
+  display: inline-flex;
+  gap: 4rem;
+  animation: scroll 30s linear infinite;
+}
+
+.logoItem {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: rgba(15, 23, 42, 0.3);
+  transition: color 0.3s ease;
+  user-select: none;
+}
+
+.logoItem:hover {
+  color: var(--primary-sky);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.33%); } /* scroll exactly 1 set of logos to loop */
+}

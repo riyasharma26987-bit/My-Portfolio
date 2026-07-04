@@ -1,0 +1,93 @@
+.section {
+  padding: 3rem 0;
+  position: relative;
+}
+
+.sideBySide {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+/* Reverse layout for alternating sections */
+.sideBySide.reverse {
+  flex-direction: row-reverse;
+}
+
+.textContent {
+  flex: 1;
+}
+
+.graphicContent {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paragraph {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+/* Premium Glass Card (Airy Theme) */
+.glassCard {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-float);
+  border-radius: 24px;
+  padding: 3rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.glassCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 60px -20px rgba(56, 189, 248, 0.3);
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.abstractBlob {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, var(--primary-sky), transparent 70%);
+  opacity: 0.2;
+  border-radius: 50%;
+}
+
+.focusList {
+  margin-top: 1.5rem;
+}
+
+.focusList li {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Grids */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 968px) {
+  .sideBySide, .sideBySide.reverse {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}

@@ -1,0 +1,67 @@
+.skillsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  position: relative;
+  overflow: visible;
+}
+
+.orbitalMap {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerNode {
+  width: 120px;
+  height: 120px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.5rem;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.4), inset 0 0 20px rgba(56, 189, 248, 0.2);
+  z-index: 10;
+}
+
+.skillNode {
+  position: absolute;
+  padding: 0.8rem 1.5rem;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 30px;
+  font-weight: 600;
+  color: var(--text-primary);
+  box-shadow: var(--shadow-soft);
+  z-index: 5;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.skillNode:hover {
+  border-color: var(--primary-sky);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+  z-index: 20;
+}
+
+.orbitRing {
+  position: absolute;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .orbitalMap {
+    transform: scale(0.6);
+  }
+}

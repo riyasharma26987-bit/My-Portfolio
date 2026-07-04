@@ -1,0 +1,56 @@
+.backgroundContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  pointer-events: none;
+}
+
+.skyGradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #e0f2fe 0%, #f0fdfa 50%, #ffffff 100%);
+  opacity: 0.8;
+}
+
+.cloudLayer {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+}
+
+.cloud1 {
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(56,189,248,0.15) 0%, rgba(255,255,255,0) 70%);
+  top: -10%;
+  left: -10%;
+}
+
+.cloud2 {
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(34,211,238,0.1) 0%, rgba(255,255,255,0) 70%);
+  bottom: -20%;
+  right: -10%;
+}
+
+.cloud3 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(253,224,71,0.08) 0%, rgba(255,255,255,0) 70%);
+  top: 40%;
+  left: 30%;
+}
+
+.particle {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(56, 189, 248, 0.5);
+}
