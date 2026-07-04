@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import SectionBadge from '../components/Badges/SectionBadge';
-import styles from '../components/Sections/Sections.module.css';
+import SectionBadge from '../components/Badges/sectionBadge';
+import styles from '../components/sections/sections.module.css';
 
 const initialTopics = [
   { id: '1', title: 'Arrays & Strings (Two Pointers, Sliding Window)', completed: false, category: 'DSA' },

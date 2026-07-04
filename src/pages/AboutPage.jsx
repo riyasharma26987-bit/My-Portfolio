@@ -2,9 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // Components
-import RealMe from '../components/Sections/RealMe';
-import FutureGoals from '../components/Sections/FutureGoals';
-import Contact from '../components/Sections/Contact';
+import RealMe from '../components/sections/RealMe';
+import FutureGoals from '../components/sections/FutureGoals';
+import Contact from '../components/sections/Contact';
 
 const AboutPage = () => {
   return (

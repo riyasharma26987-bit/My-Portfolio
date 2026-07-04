@@ -2,11 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // Components
-import Experience from '../components/Sections/Experience';
-import Education from '../components/Sections/Education';
-import AIExpertise from '../components/Sections/AIExpertise';
-import TechStack from '../components/Sections/TechStack';
-import ProblemSolving from '../components/Sections/ProblemSolving';
+import Experience from '../components/sections/Experience';
+import Education from '../components/sections/Education';
+import AIExpertise from '../components/sections/AIExpertise';
+import TechStack from '../components/sections/TechStack';
+import ProblemSolving from '../components/sections/ProblemSolving';
 
 const AchievementsPage = () => {
   return (
