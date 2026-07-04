@@ -15,7 +15,7 @@ import AboutPage from './pages/AboutPage';
 import AchievementsPage from './pages/AchievementsPage';
 import KnowledgePage from './pages/KnowledgePage';
 import ToolsPage from './pages/ToolsPage';
-import Footer from './components/Sections/Footer';
+import Footer from './components/sections/Footer';
 
 function App() {
   return (
