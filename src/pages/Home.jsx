@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 
 // Components
 import Hero from '../components/Hero/Hero';
-import VideoDemos from '../components/Sections/VideoDemos';
-import CompanyLogos from '../components/Sections/CompanyLogos';
-import LiveAiPlayground from '../components/Sections/LiveAiPlayground';
-import WhyHireMe from '../components/Sections/WhyHireMe';
-import Projects from '../components/Sections/Projects';
+import VideoDemos from '../components/sections/VideoDemos';
+import CompanyLogos from '../components/sections/CompanyLogos';
+import LiveAiPlayground from '../components/sections/LiveAiPlayground';
+import WhyHireMe from '../components/sections/WhyHireMe';
+import Projects from '../components/sections/Projects';
 
 const Home = () => {
   return (
