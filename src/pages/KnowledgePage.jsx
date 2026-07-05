@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import SectionBadge from '../components/Badges/sectionBadge';
+import SectionBadge from '../components/Badges/SectionBadge';
 import styles from '../components/sections/Sections.module.css';
 
 const KnowledgePage = () => {
