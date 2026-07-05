@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import SectionBadge from '../components/Badges/sectionBadge';
-import styles from '../components/sections/sections.module.css';
+import styles from '../components/sections/Sections.module.css';
 
 const KnowledgePage = () => {
   const [searchTerm, setSearchTerm] = useState('');
